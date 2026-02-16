@@ -1,15 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akili - Language AI Built for Africa</title>
+  <meta name="description" content="Advanced large language models trained on 2000+ African languages. Breaking barriers, preserving cultures, empowering communities.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Akili Static Website</title>
-    </head>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <div class="header__logo-icon">
+          <div class="header__logo-glow"></div>
+          <svg class="icon relative-z10" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </div>
+        <span class="header__logo-text gradient-text">Akili</span>
+      </div>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+      <nav class="header__nav">
+        <a href="#features" class="header__nav-link">Features</a>
+        <a href="#technology" class="header__nav-link">Technology</a>
+        <a href="#about" class="header__nav-link">About</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="header__cta">
+        <span class="header__cta-label">Get API Key</span>
+        <div class="header__cta-hover"></div>
+      </button>
+
+      <button type="button" class="header__mobile-btn" id="mobile-menu-btn" aria-label="Open menu">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__bg-gradient"></div>
+      <div class="glow-blob hero__blob-purple"></div>
+      <div class="glow-blob hero__blob-orange"></div>
+      <div class="glow-blob hero__blob-green"></div>
+    </div>
+    <div class="grid-overlay hero__grid"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <svg class="icon" class="color-orange" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
+        <span class="hero__badge-text">Powering the future of African languages</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="gradient-text">Language AI</span><br>
+        <span class="text-white">Built for Africa</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Advanced large language models trained on 2000+ African languages. Breaking barriers, preserving cultures, empowering communities.
+      </p>
+
+      <div class="hero__buttons">
+        <button type="button" class="btn-primary">
+          <span class="btn-primary__label">
+            Start Building
+            <svg class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+          <div class="btn-primary__hover-bg"></div>
+        </button>
+        <button type="button" class="btn-secondary">View Documentation</button>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat-card">
+          <div class="stat-card__glow"></div>
+          <div class="stat-card__inner">
+            <div class="stat-card__value">2000+</div>
+            <div class="stat-card__label">Languages</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__glow"></div>
+          <div class="stat-card__inner">
+            <div class="stat-card__value">99.9%</div>
+            <div class="stat-card__label">Uptime</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__glow"></div>
+          <div class="stat-card__inner">
+            <div class="stat-card__value">&lt;100ms</div>
+            <div class="stat-card__label">Latency</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__glow"></div>
+          <div class="stat-card__inner">
+            <div class="stat-card__value">50M+</div>
+            <div class="stat-card__label">API Calls</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__fade"></div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section id="features" class="section features">
+    <div class="features__bg"></div>
+    <div class="section-divider"></div>
+
+    <div class="features__content container">
+      <div class="features__header" data-animate>
+        <h2 class="features__title">
+          <span class="gradient-text">Powerful Capabilities</span>
+        </h2>
+        <p class="features__subtitle">Everything you need to build next-generation AI applications for African markets</p>
+      </div>
+
+      <div class="features__grid">
+        <!-- 1: 2000+ Languages -->
+        <div class="feature-card feature-card--orange" data-animate>
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+            </div>
+            <h3 class="feature-card__title">2000+ Languages</h3>
+            <p class="feature-card__desc">Comprehensive support for major and indigenous African languages with cultural context.</p>
+          </div>
+        </div>
+
+        <!-- 2: Advanced NLP -->
+        <div class="feature-card feature-card--purple" data-animate class="delay-1">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+            </div>
+            <h3 class="feature-card__title">Advanced NLP</h3>
+            <p class="feature-card__desc">State-of-the-art natural language processing trained on diverse African linguistic data.</p>
+          </div>
+        </div>
+
+        <!-- 3: Real-time Processing -->
+        <div class="feature-card feature-card--green" data-animate class="delay-2">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Real-time Processing</h3>
+            <p class="feature-card__desc">Lightning-fast inference with sub-100ms latency for production workloads.</p>
+          </div>
+        </div>
+
+        <!-- 4: Enterprise Security -->
+        <div class="feature-card feature-card--blue" data-animate class="delay-3">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Enterprise Security</h3>
+            <p class="feature-card__desc">Bank-grade encryption and compliance with international data protection standards.</p>
+          </div>
+        </div>
+
+        <!-- 5: Custom Models -->
+        <div class="feature-card feature-card--yellow" data-animate class="delay-4">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+            </div>
+            <h3 class="feature-card__title">Custom Models</h3>
+            <p class="feature-card__desc">Fine-tune models on your data or build domain-specific language solutions.</p>
+          </div>
+        </div>
+
+        <!-- 6: Developer First -->
+        <div class="feature-card feature-card--indigo" data-animate class="delay-5">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+            </div>
+            <h3 class="feature-card__title">Developer First</h3>
+            <p class="feature-card__desc">Simple APIs, comprehensive SDKs, and extensive documentation to get started fast.</p>
+          </div>
+        </div>
+
+        <!-- 7: Cultural Intelligence -->
+        <div class="feature-card feature-card--teal" data-animate class="delay-6">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="feature-card__title">Cultural Intelligence</h3>
+            <p class="feature-card__desc">Models that understand context, idioms, and cultural nuances across regions.</p>
+          </div>
+        </div>
+
+        <!-- 8: Community Driven -->
+        <div class="feature-card feature-card--rose" data-animate class="delay-7">
+          <div class="feature-card__glow"></div>
+          <div class="feature-card__inner">
+            <div class="feature-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-card__title">Community Driven</h3>
+            <p class="feature-card__desc">Built with African researchers, linguists, and developers for the continent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Technology ===== -->
+  <section id="technology" class="section">
+    <div class="technology__bg">
+      <div class="glow-blob technology__blob-left"></div>
+      <div class="glow-blob technology__blob-right"></div>
+    </div>
+
+    <div class="technology__content container">
+      <div class="technology__grid">
+        <!-- Left: Text -->
+        <div data-animate="left">
+          <h2 class="technology__title">
+            <span class="text-white">Built on </span>
+            <span class="gradient-text--op">Cutting-Edge Technology</span>
+          </h2>
+          <p class="technology__desc">
+            Our models are trained on billions of tokens from diverse African language sources, ensuring authentic and culturally relevant AI responses.
+          </p>
+
+          <div class="tech-stack">
+            <div class="tech-stack__item" data-animate="left" class="delay-1">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Transformer-based Architecture</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-2">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Multi-modal Processing</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-3">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Context-aware Translation</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-4">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Sentiment Analysis</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-5">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Named Entity Recognition</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-6">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Text Summarization</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-7">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Question Answering</span>
+            </div>
+            <div class="tech-stack__item" data-animate="left" class="delay-8">
+              <svg class="icon tech-stack__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span class="tech-stack__text">Speech-to-Text Integration</span>
+            </div>
+          </div>
+
+          <div class="technology__buttons">
+            <button type="button" class="btn-primary btn-sm btn-primary--shadow">
+              <span class="btn-primary__label">Explore Models</span>
+              <div class="btn-primary__hover-bg"></div>
+            </button>
+            <button type="button" class="btn-secondary btn-sm">Read Whitepaper</button>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="technology__image-wrapper" data-animate="right">
+          <div class="technology__image-border">
+            <div class="technology__image-glow"></div>
+            <div class="technology__image-inner">
+              <img src="https://images.unsplash.com/photo-1617049037028-d4746ed5e6bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzcwNzAyOTUyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="AI Technology Visualization">
+            </div>
+          </div>
+
+          <div class="floating-card floating-card--accuracy">
+            <div class="floating-card__label">Accuracy</div>
+            <div class="floating-card__value">98.7%</div>
+          </div>
+
+          <div class="floating-card floating-card--speed">
+            <div class="floating-card__label">Speed</div>
+            <div class="floating-card__value">85ms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="about__bg">
+      <div class="glow-blob about__blob-green"></div>
+      <div class="glow-blob about__blob-orange"></div>
+    </div>
+    <div class="section-divider"></div>
+
+    <div class="about__content container">
+      <div class="about__header" data-animate>
+        <h2 class="about__title">
+          <span class="gradient-text">Transforming Africa's Digital Future</span>
+        </h2>
+        <p class="about__subtitle">We're building the foundation for an inclusive, multilingual AI ecosystem across Africa</p>
+      </div>
+
+      <div class="about__values">
+        <!-- Mission -->
+        <div class="value-card value-card--orange" data-animate>
+          <div class="value-card__glow"></div>
+          <div class="value-card__inner">
+            <div class="value-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3 class="value-card__title">Mission</h3>
+            <p class="value-card__desc">To make AI accessible in every African language, preserving linguistic diversity while driving technological innovation.</p>
+          </div>
+        </div>
+
+        <!-- Impact -->
+        <div class="value-card value-card--purple" data-animate class="delay-2">
+          <div class="value-card__glow"></div>
+          <div class="value-card__inner">
+            <div class="value-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <h3 class="value-card__title">Impact</h3>
+            <p class="value-card__desc">Empowering 1.4 billion Africans to access technology, education, and information in their native languages.</p>
+          </div>
+        </div>
+
+        <!-- Innovation -->
+        <div class="value-card value-card--green" data-animate class="delay-4">
+          <div class="value-card__glow"></div>
+          <div class="value-card__inner">
+            <div class="value-card__icon">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3 class="value-card__title">Innovation</h3>
+            <p class="value-card__desc">Pioneering research in low-resource language AI, setting new standards for multilingual models worldwide.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="about__image-section" data-animate>
+        <div class="about__image-overlay"></div>
+        <div class="about__image-grid">
+          <div class="about__image-left">
+            <img src="https://images.unsplash.com/photo-1760681557952-e78ce074a197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZ2VvbWV0cmljJTIwcGF0dGVybnN8ZW58MXx8fHwxNzcwNzg2MDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="African patterns">
+          </div>
+          <div class="about__image-right">
+            <h3 class="about__image-title">Rooted in African Innovation</h3>
+            <p class="about__image-text">
+              Founded by a team of African AI researchers, linguists, and engineers, we understand the unique challenges and opportunities in building language technology for our continent.
+            </p>
+            <p class="about__image-text">
+              Our work is informed by decades of linguistic research and powered by partnerships with universities, cultural institutions, and communities across all 54 African nations.
+            </p>
+            <div class="about__mini-stats">
+              <div>
+                <div class="about__mini-stat-value gradient-text--op">54</div>
+                <div class="about__mini-stat-label">Countries</div>
+              </div>
+              <div>
+                <div class="about__mini-stat-value gradient-text--pg">200+</div>
+                <div class="about__mini-stat-label">Researchers</div>
+              </div>
+              <div>
+                <div class="about__mini-stat-value gradient-text--go">15+</div>
+                <div class="about__mini-stat-label">Partners</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="contact" class="section">
+    <div class="cta__bg">
+      <div class="cta__bg-gradient"></div>
+      <div class="glow-blob cta__blob-orange"></div>
+      <div class="glow-blob cta__blob-purple"></div>
+    </div>
+    <div class="grid-overlay cta__grid"></div>
+
+    <div class="cta__content container--narrow">
+      <div class="cta__card" data-animate>
+        <div class="cta__card-glow"></div>
+        <div class="cta__inner">
+          <div class="cta__badge" data-animate="scale">
+            <svg class="icon" class="color-orange" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
+            <span class="cta__badge-text">Join the revolution</span>
+          </div>
+
+          <h2 class="cta__title">
+            <span class="text-white">Ready to Build the </span><br>
+            <span class="gradient-text">Future of African AI?</span>
+          </h2>
+
+          <p class="cta__desc">
+            Get instant access to our API and start building multilingual applications that serve millions across Africa.
+          </p>
+
+          <div class="cta__buttons">
+            <button type="button" class="btn-primary">
+              <span class="btn-primary__label">
+                Get API Access
+                <svg class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+              <div class="btn-primary__hover-bg"></div>
+            </button>
+            <button type="button" class="btn-secondary cta__secondary-border">Schedule Demo</button>
+          </div>
+
+          <div class="cta__trust">
+            <div class="cta__trust-item">
+              <div class="cta__trust-dot"></div>
+              <span>Free tier available</span>
+            </div>
+            <div class="cta__trust-item">
+              <div class="cta__trust-dot"></div>
+              <span>No credit card required</span>
+            </div>
+            <div class="cta__trust-item">
+              <div class="cta__trust-dot"></div>
+              <span>24/7 support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div>
+          <div class="header__logo footer__brand-logo">
+            <div class="header__logo-icon">
+              <div class="header__logo-glow"></div>
+              <svg class="icon relative-z10" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <span class="header__logo-text gradient-text">Akili</span>
+          </div>
+          <p class="footer__brand-text">
+            Pioneering AI language technology for Africa. Building the future of multilingual AI with cultural context and linguistic diversity.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Email">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="footer__column-title">Products</h3>
+          <ul class="footer__column-list">
+            <li><a href="#" class="footer__column-link">API Access</a></li>
+            <li><a href="#" class="footer__column-link">Custom Models</a></li>
+            <li><a href="#" class="footer__column-link">SDKs &amp; Tools</a></li>
+            <li><a href="#" class="footer__column-link">Playground</a></li>
+            <li><a href="#" class="footer__column-link">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="footer__column-title">Resources</h3>
+          <ul class="footer__column-list">
+            <li><a href="#" class="footer__column-link">Documentation</a></li>
+            <li><a href="#" class="footer__column-link">API Reference</a></li>
+            <li><a href="#" class="footer__column-link">Tutorials</a></li>
+            <li><a href="#" class="footer__column-link">Blog</a></li>
+            <li><a href="#" class="footer__column-link">Research</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="footer__column-title">Company</h3>
+          <ul class="footer__column-list">
+            <li><a href="#" class="footer__column-link">About Us</a></li>
+            <li><a href="#" class="footer__column-link">Careers</a></li>
+            <li><a href="#" class="footer__column-link">Partners</a></li>
+            <li><a href="#" class="footer__column-link">Contact</a></li>
+            <li><a href="#" class="footer__column-link">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Akili. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
